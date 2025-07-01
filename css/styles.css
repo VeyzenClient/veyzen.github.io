@@ -9,8 +9,8 @@
 body, html {
   font-family: 'Outfit', sans-serif;
   height: 100%;
-  background: #1a1a2e; /* Darker background */
-  color: #e0e0e0; /* Lighter text */
+  background: #f9f9f9;
+  color: #222;
 }
 
 a {
@@ -23,20 +23,20 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(26, 26, 46, 0.9); /* Darker header background */
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Lighter border */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1001;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Darker shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .client-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #7B90FF; /* Adjusted blue for dark mode */
+  color: #2B4BFF;
 }
 
 .nav-toggle {
@@ -57,7 +57,7 @@ a {
 .nav-toggle .bar {
   height: 4px;
   width: 100%;
-  background-color: #7B90FF; /* Adjusted blue for dark mode */
+  background-color: #2B4BFF;
   border-radius: 2px;
   transition: all 0.4s ease;
 }
@@ -78,7 +78,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(26, 26, 46, 0.95); /* Darker fullscreen nav background */
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
@@ -104,7 +104,7 @@ a {
 }
 
 .fullscreen-nav ul li a {
-  color: #7B90FF; /* Adjusted blue for dark mode */
+  color: #2B4BFF;
   font-size: 2.5rem;
   position: relative;
   transition: color 0.3s ease;
@@ -118,7 +118,7 @@ a {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #7B90FF; /* Adjusted blue for dark mode */
+  background-color: #2B4BFF;
   transition: width 0.3s ease;
 }
 
@@ -145,12 +145,13 @@ main {
   max-width: 180px;
   height: auto;
   margin-bottom: 1rem;
+  filter: brightness(0);
 }
 
 .gradient-text {
   font-size: 3.5rem;
   font-weight: 1000;
-  background: linear-gradient(90deg, #7B90FF, #A0AEFF); /* Adjusted gradient for dark mode */
+  background: linear-gradient(90deg, #2B4BFF, #6274FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -159,29 +160,29 @@ main {
 
 .second-text {
   font-size: 2.2rem;
-  color: #c0c0c0; /* Lighter color for second text */
+  color: #444;
   font-weight: 700;
 }
 
 .main-btn {
   padding: 0.8rem 2rem;
   font-size: 1.25rem;
-  background-color: #7B90FF; /* Adjusted blue for dark mode */
+  background-color: #2B4BFF;
   border: none;
   border-radius: 12px;
   color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 6px 12px rgba(123, 144, 255, 0.25); /* Adjusted shadow for dark mode */
+  box-shadow: 0 6px 12px rgba(43, 75, 255, 0.25);
 }
 
 .main-btn:hover {
-  background-color: #5d6edb; /* Darker hover for dark mode */
+  background-color: #1f34cc;
 }
 
 .features-section {
   padding: 3rem 1rem 5rem;
-  background: #282840; /* Darker features section background */
+  background: #f0f0f0;
   text-align: center;
 }
 
@@ -189,7 +190,7 @@ main {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   font-weight: 800;
-  color: #7B90FF; /* Adjusted blue for dark mode */
+  color: #2B4BFF;
 }
 
 .cards-container {
@@ -201,39 +202,39 @@ main {
 }
 
 .card {
-  background: #333355; /* Darker card background */
+  background: #ffffff;
   border-radius: 16px;
   padding: 2rem 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(123, 144, 255, 0.3); /* Adjusted hover shadow for dark mode */
+  box-shadow: 0 10px 20px rgba(43, 75, 255, 0.2);
 }
 
 .feature-icon {
   font-size: 48px;
-  color: #7B90FF; /* Adjusted blue for dark mode */
+  color: #2B4BFF;
   margin-bottom: 1rem;
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #e0e0e0; /* Lighter text */
+  color: #222;
 }
 
 .card p {
-  color: #b0b0b0; /* Lighter paragraph text */
+  color: #555;
   font-size: 1rem;
 }
 
 .about-section {
-  background: #1a1a2e; /* Darker about section background */
-  color: #e0e0e0; /* Lighter text */
+  background: #ffffff;
+  color: #222;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -242,23 +243,23 @@ main {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   font-weight: 800;
-  color: #7B90FF; /* Adjusted blue for dark mode */
+  color: #2B4BFF;
 }
 
 .about-section p {
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
-  color: #c0c0c0; /* Lighter paragraph text */
+  color: #444;
   line-height: 1.6;
 }
 
 .footer {
-  background: #282840; /* Darker footer background */
+  background: #f9f9f9;
   padding: 2rem 1rem;
   text-align: center;
-  border-top: 1px solid #3a3a5a; /* Darker border */
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow */
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04);
   border-radius: 24px 24px 0 0;
 }
 
@@ -283,12 +284,12 @@ main {
 
 .footer p {
   font-size: 1rem;
-  color: #b0b0b0; /* Lighter text */
+  color: #555;
   font-weight: 500;
 }
 
 .footer strong {
-  color: #7B90FF; /* Adjusted blue for dark mode */
+  color: #2B4BFF;
   font-weight: 600;
 }
 
