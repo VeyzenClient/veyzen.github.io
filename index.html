@@ -1,143 +1,96 @@
-
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Veyzen Client​, Veyzen Client​, What is the Veyzen Client?, Screenshots">
-    <meta name="description" content="A modern and next-generation Minecraft PvP client that offers the best PvP experience and various mods.">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Veyzen Client</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Veyzen Website",
-		"logo": "images/veyzenlogo.png"
-}</script>
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-b0cf"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1080" data-image-height="1080">
-          <img src="images/veyzenlogo.png" class="u-logo-image u-logo-image-1">
-        </a><span class="u-file-icon u-icon u-icon-1" data-href="https://space.bilibili.com/1472638140" data-target="_blank"><img src="images/R.png" alt=""></span><span class="u-file-icon u-icon u-icon-2" data-href="https://twitter.com/EldoDebug" data-target="_blank"><img src="images/733579.png" alt=""></span><span class="u-file-icon u-icon u-icon-3" data-href="https://www.youtube.com/channel/UCJYcrccMmfPw3-0EZneKNEA" data-target="_blank"><img src="images/1384060.png" alt=""></span>
-        <h2 class="u-custom-font u-hidden-sm u-hidden-xs u-text u-text-body-alt-color u-text-default u-text-1">Veyzen Client </h2><span class="u-file-icon u-icon u-icon-4" data-href="https://discord.gg/veyzen-client" data-target="_blank"><img src="images/5968756.png" alt=""></span>
-      </div></header>
-    <section class="u-clearfix u-image lazyload u-section-1" id="sec-df6c" data-image-width="1920" data-image-height="1080" data-bg="url(&quot;images/background1.png&quot;)">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions lazyload u-image-1" alt="" data-image-width="1080" data-image-height="1080" data-animation-name="customAnimationIn" data-animation-duration="1000" data-src="images/veyzenlogo.png">
-        <h2 class="u-align-center u-custom-font u-text u-text-body-alt-color u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">&nbsp; Veyzen Client </h2>
-        <h5 class="u-align-center u-custom-font u-text u-text-body-alt-color u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250"> A modern and next-generation Minecraft PvP client </h5>
-        <a href="Download.html" class="u-btn u-btn-round u-button-style u-custom-color-1 u-custom-font u-hover-feature u-radius-12 u-text-body-alt-color u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500">Download</a>
-      </div>
-      
-    </section>
-    <section class="u-align-center u-clearfix u-white u-section-2" id="sec-7459">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
-          <div class="u-container-layout">
-            <h2 class="u-custom-font u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">What is the Veyzen Client?</h2>
-            <p class="u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0"> It is a client that features a very modern design and numerous functionalities</p>
-            <div class="u-align-left u-video u-video-1">
-              <div class="embed-responsive embed-responsive-1">
-                <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item lazyload" frameborder="0" allowfullscreen="" data-src="https://www.youtube.com/embed/rTbhtX7KPh4?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0"></iframe>
-              </div>
-            </div>
-          </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="client-name">Veyzen</div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </header>
+
+    <nav id="fullscreen-nav" class="fullscreen-nav">
+      <ul>
+        <li><a href="#home" onclick="toggleNav()">Home</a></li>
+        <li><a href="#features" onclick="toggleNav()">Features</a></li>
+        <li><a href="#about" onclick="toggleNav()">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home" class="home-section">
+        <img src="img/logo.png" alt="Veyzen Logo" class="center-logo" />
+
+        <div class="texts">
+          <h1 class="gradient-text">Veyzen Client</h1>
+          <h2 class="second-text">Created for performance! But not limited to it.</h2>
         </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-container-align-center u-section-3" id="sec-b502">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-align-center u-container-style u-group u-shape-rectangle u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
-          <div class="u-container-layout">
-            <h2 class="u-align-center u-custom-font u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Screenshots</h2>
-            <div class="u-carousel u-gallery u-layout-carousel u-lightbox u-no-transition u-show-text-none u-gallery-1" data-interval="5000" data-u-ride="carousel" id="carousel-88d9">
-              <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
-                <li data-u-target="#carousel-88d9" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
-                <li data-u-target="#carousel-88d9" data-u-slide-to="1" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
-                <li data-u-target="#carousel-88d9" data-u-slide-to="2" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
-              </ol>
-              <div class="u-carousel-inner u-gallery-inner" role="listbox">
-                <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
-                  <div class="u-back-slide" data-image-width="1920" data-image-height="1080">
-                    <img class="u-back-image u-expanded lazyload" data-src="images/2023-07-01_21.04.49.png">
-                  </div>
-                  <div class="u-over-slide u-over-slide-1"></div>
-                </div>
-                <div class="u-carousel-item u-gallery-item u-carousel-item-2">
-                  <div class="u-back-slide u-back-slide-2" data-image-width="1920" data-image-height="1080">
-                    <img alt="" data-image-width="2000" data-image-height="1333" class="u-back-image u-expanded lazyload" data-src="images/2023-07-01_21.05.17.png">
-                  </div>
-                  <div class="u-over-slide u-over-slide-2"></div>
-                </div>
-                <div class="u-carousel-item u-gallery-item u-carousel-item-3" data-image-width="1920" data-image-height="1080">
-                  <div class="u-back-slide">
-                    <img class="u-back-image u-expanded lazyload" data-src="images/2023-07-01_21.05.28.png">
-                  </div>
-                  <div class="u-over-slide u-over-slide-3"></div>
-                  <style data-mode="XL" data-visited="true"></style>
-                  <style data-mode="LG" data-visited="true"></style>
-                  <style data-mode="MD"></style>
-                  <style data-mode="SM"></style>
-                  <style data-mode="XS" data-visited="true"></style>
-                </div>
-              </div>
-              <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-88d9" role="button" data-u-slide="prev">
-                <span aria-hidden="true">
-                  <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
-                </span>
-                <span class="sr-only">
-                  <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
-                </span>
-              </a>
-              <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-88d9" role="button" data-u-slide="next">
-                <span aria-hidden="true">
-                  <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
-                </span>
-                <span class="sr-only">
-                  <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-814d"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-custom-font u-small-text u-text u-text-variant u-text-1">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-1" href="Law.html"> Indication based on the Act on Specified Commercial Transactions</a>
+
+        <button class="main-btn">Download Now</button>
+      </section>
+
+      <section class="about-section" id="about">
+        <h2>About Veyzen</h2>
+        <p>
+          <strong>Veyzen</strong> is a lightweight, performance-first Minecraft client designed for players who want
+          the smoothest gameplay without compromising visuals or stability. Fully compliant with Hypixel and other
+          major servers, Veyzen offers a clean, responsive experience with zero bloat — and no cheats. Whether you're
+          PvPing or just chilling, Veyzen helps you play better, faster, and smarter.
         </p>
-        <p class="u-custom-font u-small-text u-text u-text-variant u-text-2"> © Copyright 2022-2023 Veyzen Client</p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
-        <span>Free HTML Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.review" target="_blank">
-        <span>Best Website Builder</span>
-      </a>. 
-    </section>
-  
-</body></html>
+      </section>
+
+      <section id="features" class="features-section">
+        <h2>Client Features</h2>
+        <div class="cards-container">
+          <div class="card">
+            <span class="material-icons feature-icon">bolt</span>
+            <h3>Optimized Performance</h3>
+            <p>Built from the ground up for higher FPS and faster responsiveness.</p>
+          </div>
+          <div class="card">
+            <span class="material-icons feature-icon">visibility</span>
+            <h3>Minimal UI</h3>
+            <p>A distraction-free interface that looks modern and feels smooth.</p>
+          </div>
+          <div class="card">
+            <span class="material-icons feature-icon">security</span>
+            <h3>Safe to Use</h3>
+            <p>Not a hack client. Fully safe for Hypixel and other major servers.</p>
+          </div>
+          <div class="card">
+            <span class="material-icons feature-icon">extension</span>
+            <h3>Modular Design</h3>
+            <p>Enable only what you need. Lightweight modules for core features.</p>
+          </div>
+          <div class="card">
+            <span class="material-icons feature-icon">download</span>
+            <h3>Quick Setup</h3>
+            <p>Easy installation with minimal configuration required.</p>
+          </div>
+          <div class="card">
+            <span class="material-icons feature-icon">code</span>
+            <h3>Open Source</h3>
+            <p>Fully transparent and open on GitHub. Built by the community.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <img src="img/arctyll.png" alt="Arctyll Logo" />
+        <p>&copy; 2025 Veyzen. Powered by <strong>Arctyll</strong></p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
