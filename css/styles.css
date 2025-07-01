@@ -9,8 +9,8 @@
 body, html {
   font-family: 'Outfit', sans-serif;
   height: 100%;
-  background: #121212;
-  color: #ddd;
+  background: #1a1a2e; /* Darker background */
+  color: #e0e0e0; /* Lighter text */
 }
 
 a {
@@ -23,24 +23,43 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(20, 20, 20, 0.9);
+  background: rgba(26, 26, 46, 0.9); /* Darker header background */
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Lighter border */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1001;
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Darker shadow */
 }
 
 .client-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #6a8bff;
+  color: #7B90FF; /* Adjusted blue for dark mode */
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 30px;
+  height: 24px;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  z-index: 1100;
 }
 
 .nav-toggle .bar {
-  background-color: #6a8bff;
+  height: 4px;
+  width: 100%;
+  background-color: #7B90FF; /* Adjusted blue for dark mode */
+  border-radius: 2px;
+  transition: all 0.4s ease;
 }
 
 .nav-toggle.active .bar:nth-child(1) {
@@ -59,7 +78,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(18, 18, 18, 0.95);
+  background: rgba(26, 26, 46, 0.95); /* Darker fullscreen nav background */
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
@@ -85,7 +104,7 @@ a {
 }
 
 .fullscreen-nav ul li a {
-  color: #6a8bff;
+  color: #7B90FF; /* Adjusted blue for dark mode */
   font-size: 2.5rem;
   position: relative;
   transition: color 0.3s ease;
@@ -99,7 +118,7 @@ a {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #6a8bff;
+  background-color: #7B90FF; /* Adjusted blue for dark mode */
   transition: width 0.3s ease;
 }
 
@@ -126,13 +145,12 @@ main {
   max-width: 180px;
   height: auto;
   margin-bottom: 1rem;
-  filter: brightness(1);
 }
 
 .gradient-text {
   font-size: 3.5rem;
   font-weight: 1000;
-  background: linear-gradient(90deg, #6a8bff, #8c9aff);
+  background: linear-gradient(90deg, #7B90FF, #A0AEFF); /* Adjusted gradient for dark mode */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -141,29 +159,29 @@ main {
 
 .second-text {
   font-size: 2.2rem;
-  color: #bbb;
+  color: #c0c0c0; /* Lighter color for second text */
   font-weight: 700;
 }
 
 .main-btn {
   padding: 0.8rem 2rem;
   font-size: 1.25rem;
-  background-color: #6a8bff;
+  background-color: #7B90FF; /* Adjusted blue for dark mode */
   border: none;
   border-radius: 12px;
-  color: #111;
+  color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 6px 12px rgba(106, 139, 255, 0.25);
+  box-shadow: 0 6px 12px rgba(123, 144, 255, 0.25); /* Adjusted shadow for dark mode */
 }
 
 .main-btn:hover {
-  background-color: #4d63cc;
+  background-color: #5d6edb; /* Darker hover for dark mode */
 }
 
 .features-section {
   padding: 3rem 1rem 5rem;
-  background: #1a1a1a;
+  background: #282840; /* Darker features section background */
   text-align: center;
 }
 
@@ -171,7 +189,7 @@ main {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   font-weight: 800;
-  color: #6a8bff;
+  color: #7B90FF; /* Adjusted blue for dark mode */
 }
 
 .cards-container {
@@ -183,39 +201,39 @@ main {
 }
 
 .card {
-  background: #222;
+  background: #333355; /* Darker card background */
   border-radius: 16px;
   padding: 2rem 1.5rem;
-  box-shadow: 0 4px 12px rgba(106, 139, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(106, 139, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(123, 144, 255, 0.3); /* Adjusted hover shadow for dark mode */
 }
 
 .feature-icon {
   font-size: 48px;
-  color: #6a8bff;
+  color: #7B90FF; /* Adjusted blue for dark mode */
   margin-bottom: 1rem;
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #ddd;
+  color: #e0e0e0; /* Lighter text */
 }
 
 .card p {
-  color: #bbb;
+  color: #b0b0b0; /* Lighter paragraph text */
   font-size: 1rem;
 }
 
 .about-section {
-  background: #222;
-  color: #ddd;
+  background: #1a1a2e; /* Darker about section background */
+  color: #e0e0e0; /* Lighter text */
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -224,23 +242,23 @@ main {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   font-weight: 800;
-  color: #6a8bff;
+  color: #7B90FF; /* Adjusted blue for dark mode */
 }
 
 .about-section p {
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
-  color: #bbb;
+  color: #c0c0c0; /* Lighter paragraph text */
   line-height: 1.6;
 }
 
 .footer {
-  background: #121212;
+  background: #282840; /* Darker footer background */
   padding: 2rem 1rem;
   text-align: center;
-  border-top: 1px solid #333;
-  box-shadow: 0 -4px 12px rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #3a3a5a; /* Darker border */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow */
   border-radius: 24px 24px 0 0;
 }
 
@@ -257,7 +275,6 @@ main {
   height: 32px;
   width: auto;
   transition: opacity 0.3s ease;
-  filter: brightness(1);
 }
 
 .footer img:hover {
@@ -266,12 +283,12 @@ main {
 
 .footer p {
   font-size: 1rem;
-  color: #bbb;
+  color: #b0b0b0; /* Lighter text */
   font-weight: 500;
 }
 
 .footer strong {
-  color: #6a8bff;
+  color: #7B90FF; /* Adjusted blue for dark mode */
   font-weight: 600;
 }
 
