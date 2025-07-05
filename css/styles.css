@@ -35,7 +35,7 @@ a {
 
 .client-name {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #8a9bff;
 }
 
@@ -165,11 +165,12 @@ main {
 
 .main-btn {
   padding: 0.8rem 2rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   background-color: #8a9bff;
   border: none;
   border-radius: 12px;
-  color: #000000;
+  color: #ffffff;
+  font-weight: 900;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 6px 12px rgba(138, 155, 255, 0.25);
